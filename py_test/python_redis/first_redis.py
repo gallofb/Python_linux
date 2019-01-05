@@ -15,5 +15,3 @@ r.delete('name')
 
 #获取数据库中所有的建  返回的是一个列表
 print(r.keys())
-
-#
