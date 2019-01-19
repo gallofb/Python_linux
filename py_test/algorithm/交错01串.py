@@ -17,3 +17,23 @@
 # 输出
 #
 # 3
+# s = input("input 01string")
+s = ""
+# s.join("")
+s = input()
+max = 0
+temp = 0
+if len(s)>0:
+    for i in range(len(s)-1):
+        if i+1!=len(s):
+            if s[i] != s[i + 1]:
+                temp += 1
+            else:
+                if temp > max:
+                    max = temp
+                temp = 0
+        if i+2 == len(s):
+            if temp >= max:
+                max = temp
+    max +=1
+print(max)
