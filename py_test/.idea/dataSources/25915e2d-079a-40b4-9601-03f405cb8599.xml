@@ -915,57 +915,88 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="230" parent="7" name="employees"/>
-    <table id="231" parent="7" name="table_name"/>
-    <column id="232" parent="230" name="emp_no">
+    <table id="230" parent="7" name="actor"/>
+    <table id="231" parent="7" name="employees"/>
+    <table id="232" parent="7" name="table_name"/>
+    <column id="233" parent="230" name="actor_id">
+      <Position>1</Position>
+      <DataType>smallint(5)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="234" parent="230" name="first_name">
+      <Position>2</Position>
+      <DataType>varchar(45)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="235" parent="230" name="last_name">
+      <Position>3</Position>
+      <DataType>varchar(45)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="236" parent="230" name="last_update">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="237" parent="230" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>actor_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="238" parent="231" name="emp_no">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="233" parent="230" name="birth_date">
+    <column id="239" parent="231" name="birth_date">
       <Position>2</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="234" parent="230" name="first_name">
+    <column id="240" parent="231" name="first_name">
       <Position>3</Position>
       <DataType>varchar(14)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="235" parent="230" name="last_name">
+    <column id="241" parent="231" name="last_name">
       <Position>4</Position>
       <DataType>varchar(16)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="236" parent="230" name="gender">
+    <column id="242" parent="231" name="gender">
       <Position>5</Position>
       <DataType>char(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="237" parent="230" name="hire_date">
+    <column id="243" parent="231" name="hire_date">
       <Position>6</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="238" parent="230" name="PRIMARY">
+    <key id="244" parent="231" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>emp_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="239" parent="231" name="id">
+    <column id="245" parent="232" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="240" parent="231" name="name">
+    <column id="246" parent="232" name="name">
       <Position>2</Position>
       <DataType>varchar(16)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="241" parent="231" name="PRIMARY">
+    <key id="247" parent="232" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
