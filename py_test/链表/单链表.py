@@ -69,18 +69,46 @@ class sigle_list(object):
             cur.next = node
 
 
-    """删除节点"""
-    def remove(self):
-        pass
+    """删除节点 给出值删除节点"""
+    def remove(self,item):
+        cur = self._head
+        pre = None
+        while cur!=None:
+            if cur.value == item:
+                """当删除的是第一个节点时 pre还没有进入链表中所以直接对头节点进行操作"""
+                if cur == self._head:
+                    self._head = cur.next
+                else:
+                    pre.next = cur.next
+                break
+            else:
+                pre = cur
+                cur = cur.next
+
+
+    """查询数据是否存在"""
+    def search(self,item):
+        cur = self._head
+        while cur != None:
+            if cur.value == item:
+                return True
+            else:
+                cur = cur.next
+        return False
+
+
 
 if __name__ == '__main__':
     li = sigle_list()
-    print(li.is_empty())
+    # print(li.is_empty())
     li.append(1)
-    li.append(2)
-    li.append(3)
-    li.insert(9,3)
-    print(li.is_empty())
-    print(li.The_length())
+    # li.append(2)
+    # li.append(3)
+    # li.insert(9,3)
+    # print(li.is_empty())
+    # print(li.The_length())
+    print(li.search(2))
     li.travel()
-
+    li.remove(1)
+    print("")
+    li.travel()
