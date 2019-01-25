@@ -10,3 +10,19 @@
 # 6
 # 输出
 # 6
+
+n = int(input())
+num = [1]
+i, j, k = 0, 0, 0
+numidx = 1
+while numidx < n:
+    minNum = min(num[i]*2, num[j]*3, num[k]*5)
+    num.append(minNum)
+    if minNum == num[i]*2:
+        i += 1
+    if minNum == num[j]*3:
+        j += 1
+    if minNum == num[k]*5:
+        k += 1
+    numidx += 1
+print (minNum)

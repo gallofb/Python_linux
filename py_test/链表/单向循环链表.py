@@ -1,16 +1,20 @@
 class Node(object):
+    """创建节点"""
     def __init__(self,value):
         self.value = value
         self.next = None
-class sigle_list(object):
+
+class sigle_list_reve(object):
     """使用默认参数"""
     def __init__(self,node = None):
         """保存头节点 即第一个节点"""
-        self._head = node
+        self.__head = node
+        if node:
+            node.next = node
 
     """判断链表是否为空"""
     def is_empty(self):
-        if self._head == None:
+        if self.__head == None:
             return True
         else:
             return False
@@ -18,27 +22,40 @@ class sigle_list(object):
 
     def The_length(self):
         """定义游标current进行遍历 cur指向头节点"""
-        cur = self._head
-        count = 0
-        while cur != None:
+        if self.is_empty():
+            return 0
+        cur = self.__head
+        count = 1
+        while cur.next != self.__head:
             count += 1
             cur = cur.next
         return count
 
     """遍历链表"""
     def travel(self):
-        cur = self._head
-
-        while cur != None:
+        if self.is_empty():
+            return
+        cur = self.__head
+        while cur.next!= self.__head:
             print(cur.value,end=" ")
             cur = cur.next
-
+        print(cur.value)
     """头插法"""
     """时间复杂度O(1)"""
     def add(self,value):
+        """创建节点"""
         node = Node(value)
-        node.next = self._head
-        self._head = node
+        if self.is_empty():
+            self.__head = node
+            node.next = node
+        else:
+            cur = self.__head
+            while cur.next != self.__head:
+                cur = cur.next
+            node.next = self.__head
+            self.__head = node
+            """最后一个节点指向头节点"""
+            cur.next = self.__head
 
     """指定 最坏是O(n)"""
     def insert(self,value,index):
@@ -49,7 +66,7 @@ class sigle_list(object):
         else:
             node = Node(value)
             count = 0
-            pre = self._head
+            pre = self.__head
             while count != index-1:
                 count += 1
                 pre = pre.next
@@ -63,24 +80,26 @@ class sigle_list(object):
         """将传入的值构造为一个节点"""
         node = Node(value)
         if self.is_empty():
-            self._head = node
+            self.__head = node
+            node.next = node
         else:
-            cur = self._head
-            while cur.next != None:
+            cur = self.__head
+            while cur.next != self.__head:
                 cur = cur.next
             cur.next = node
+            node.next = self.__head
 
 
     """删除节点 给出值删除节点"""
     """最坏时间复杂度为O(n)"""
     def remove(self,item):
-        cur = self._head
+        cur = self.__head
         pre = None
         while cur!=None:
             if cur.value == item:
                 """当删除的是第一个节点时 pre还没有进入链表中所以直接对头节点进行操作"""
-                if cur == self._head:
-                    self._head = cur.next
+                if cur == self.__head:
+                    self.__head = cur.next
                 else:
                     pre.next = cur.next
                 break
@@ -92,7 +111,7 @@ class sigle_list(object):
     """查询数据是否存在"""
     """最坏时间复杂度为O(n)"""
     def search(self,item):
-        cur = self._head
+        cur = self.__head
         while cur != None:
             if cur.value == item:
                 return True
@@ -103,17 +122,9 @@ class sigle_list(object):
 
 
 if __name__ == '__main__':
-    li = sigle_list()
-    # print(li.is_empty())
-    li.append(1)
+    li = sigle_list_reve()
+    print(li.is_empty())
+    li.add(1)
     li.add(2)
-    # li.append(2)
-    # li.append(3)
-    # li.insert(9,3)
-    # print(li.is_empty())
-    # print(li.The_length())
-    print(li.search(2))
-    li.travel()
-    li.remove(1)
-    print("")
+    print(li.The_length())
     li.travel()
