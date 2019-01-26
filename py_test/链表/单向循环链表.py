@@ -93,32 +93,49 @@ class sigle_list_reve(object):
     """删除节点 给出值删除节点"""
     """最坏时间复杂度为O(n)"""
     def remove(self,item):
+        if self.__head == None:
+            return
         cur = self.__head
         pre = None
-        while cur!=None:
+        while cur.next != self.__head:
             if cur.value == item:
                 """当删除的是第一个节点时 pre还没有进入链表中所以直接对头节点进行操作"""
                 if cur == self.__head:
+                    # 头结点的删除
+                    #找尾结点
+                    rear = self.__head
+                    while rear.next != self.__head:
+                        rear = rear.next
                     self.__head = cur.next
+                    rear.next = self.__head
                 else:
                     pre.next = cur.next
-                break
+                return
             else:
                 pre = cur
                 cur = cur.next
+        #退出循环为尾结点的删除
+        if cur.value == item:
+            # 只有一个结点
+            if cur == self.__head:
+                self.__head = None
+            pre.next = cur.next
 
 
     """查询数据是否存在"""
     """最坏时间复杂度为O(n)"""
     def search(self,item):
+        if self.__head == None:
+            return False
         cur = self.__head
-        while cur != None:
+        while cur.next == self.__head:
             if cur.value == item:
                 return True
             else:
                 cur = cur.next
+        if cur.value == item:
+            return True
         return False
-
 
 
 if __name__ == '__main__':

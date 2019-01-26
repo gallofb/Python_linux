@@ -10,19 +10,31 @@
 # 6
 # 输出
 # 6
+"""两种思路"""
+"""第一种 判断小于n的每一个数字是否是丑数"""
+"""用到求丑数的方法为"""
+def is_u(num):
+    while num%2==0:
+        num/=2
+    while num%3==0:
+        num/=3
+    while num%5==0:
+        num/=5
+    if num ==1:
+        return True
+    return False
 
+"""方法二"""
 n = int(input())
-num = [1]
-i, j, k = 0, 0, 0
-numidx = 1
-while numidx < n:
-    minNum = min(num[i]*2, num[j]*3, num[k]*5)
-    num.append(minNum)
-    if minNum == num[i]*2:
-        i += 1
-    if minNum == num[j]*3:
-        j += 1
-    if minNum == num[k]*5:
-        k += 1
-    numidx += 1
-print (minNum)
+U_num = [1]
+i,j,k = 0,0,0
+while max(U_num) < n:
+    min_num = min(U_num[i]*2,U_num[j]*3,U_num[k]*5)
+    U_num.append(min_num)
+    if min_num == U_num[i]*2:
+        i+=1
+    if min_num == U_num[j]*3:
+        j+=1
+    if min_num == U_num[k]*5:
+        k+=1
+print(U_num)
