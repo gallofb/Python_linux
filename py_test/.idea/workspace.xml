@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f371e46-a6c3-44b1-8a77-cdf1ad4791ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/链表/双向链表.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/寻找丑数.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/寻找丑数.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/链表/单向循环链表.py" beforeDir="false" afterPath="$PROJECT_DIR$/链表/单向循环链表.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tree/建立树.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tree/建立树.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/彩色的砖块.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/彩色的砖块.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/按层次遍历二叉树.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/按层次遍历二叉树.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +19,7 @@
     <SUITE FILE_PATH="coverage/py_test$pipeline.coverage" NAME="pipeline Coverage Results" MODIFIED="1546525844206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_redis" />
     <SUITE FILE_PATH="coverage/py_test$g_test2.coverage" NAME="g_test2 Coverage Results" MODIFIED="1545301214355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python exam/generator" />
     <SUITE FILE_PATH="coverage/py_test$use_random.coverage" NAME="use_random Coverage Results" MODIFIED="1545904447751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_basis" />
-    <SUITE FILE_PATH="coverage/py_test$.coverage" NAME="双向链表 Coverage Results" MODIFIED="1548516562455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/链表" />
+    <SUITE FILE_PATH="coverage/py_test$.coverage" NAME="彩色的砖块 Coverage Results" MODIFIED="1548680372103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm" />
     <SUITE FILE_PATH="coverage/py_test$abcd.coverage" NAME="abcd全排列 Coverage Results" MODIFIED="1547716170319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm" />
     <SUITE FILE_PATH="coverage/py_test$g_test1.coverage" NAME="g_test1 Coverage Results" MODIFIED="1545300423449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python exam/generator" />
     <SUITE FILE_PATH="coverage/py_test$New_Tree.coverage" NAME="New_Tree Coverage Results" MODIFIED="1547722855680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tree" />
@@ -138,22 +138,22 @@
     <session id="117786613">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.22" value="3" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.24" value="2" />
           <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.27" value="2" />
-          <entry key="project.open.time.28" value="3" />
+          <entry key="project.open.time.28" value="4" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.34" value="1" />
-          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.40" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -161,7 +161,7 @@
           <entry key="Python Console" value="375" />
           <entry key="cell" value="34" />
           <entry key="dummy" value="8" />
-          <entry key="py" value="13117" />
+          <entry key="py" value="13606" />
           <entry key="sql" value="376" />
           <entry key="txt" value="4" />
         </counts>
@@ -169,7 +169,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="13492" />
+          <entry key="Python" value="13981" />
           <entry key="SQL" value="147" />
           <entry key="Scratch" value="263" />
         </counts>
@@ -178,7 +178,7 @@
         <counts>
           <entry key="actor" value="1" />
           <entry key="employees" value="3" />
-          <entry key="py" value="61" />
+          <entry key="py" value="71" />
           <entry key="sql" value="3" />
           <entry key="table_name" value="3" />
         </counts>
@@ -186,7 +186,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="7" />
-          <entry key="Python" value="61" />
+          <entry key="Python" value="71" />
           <entry key="Scratch" value="3" />
         </counts>
       </usages-collector>
@@ -195,30 +195,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/链表/单链表.py">
+        <entry file="file://$PROJECT_DIR$/algorithm/按层次遍历二叉树.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="108" column="12" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
+            <state relative-caret-position="52">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <marker date="1548681944150" expanded="true" signature="37:42" ph="..." />
+                <marker date="1548681944150" expanded="true" signature="166:636" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/algorithm/排列式.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/链表/双向链表.py">
+        <entry file="file://$PROJECT_DIR$/Tree/建立树.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+            <state relative-caret-position="288">
+              <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
               <folding>
-                <element signature="e#265#333#0" />
-                <element signature="e#378#514#0" />
-                <element signature="e#798#904#0" />
-                <element signature="e#949#1160#0" />
-                <element signature="e#1138#1547#0" />
-                <element signature="e#1643#1817#0" />
-                <element signature="e#1858#2328#0" />
-                <marker date="1548516562375" expanded="true" signature="19:24" ph="..." />
-                <marker date="1548516562375" expanded="true" signature="154:159" ph="..." />
-                <marker date="1548516562375" expanded="true" signature="552:701" ph="..." />
+                <marker date="1548684094287" expanded="true" signature="19:24" ph="..." />
+                <marker date="1548684094287" expanded="true" signature="153:158" ph="..." />
               </folding>
             </state>
           </provider>
@@ -269,11 +274,9 @@
         <option value="$PROJECT_DIR$/algorithm/Fibonacci.py" />
         <option value="$PROJECT_DIR$/algorithm/矩形覆盖.py" />
         <option value="$PROJECT_DIR$/algorithm/Number0f1.py" />
-        <option value="$PROJECT_DIR$/algorithm/按层次遍历二叉树.py" />
         <option value="$PROJECT_DIR$/algorithm/计算重复字符串长度.py" />
         <option value="$PROJECT_DIR$/algorithm/排序.py" />
         <option value="$PROJECT_DIR$/algorithm/水仙花数.py" />
-        <option value="$PROJECT_DIR$/algorithm/彩色的砖块.py" />
         <option value="$PROJECT_DIR$/algorithm/等差数列.py" />
         <option value="$PROJECT_DIR$/algorithm/操作排序.py" />
         <option value="$PROJECT_DIR$/algorithm/n个数里出现次数大于等于n/2的数.py" />
@@ -286,7 +289,6 @@
         <option value="$PROJECT_DIR$/Trree.py" />
         <option value="$PROJECT_DIR$/algorithm/abcd全排列.py" />
         <option value="$PROJECT_DIR$/Tree/New_Tree.py" />
-        <option value="$PROJECT_DIR$/Tree/建立树.py" />
         <option value="$PROJECT_DIR$/python_basis/tuple.py" />
         <option value="$PROJECT_DIR$/algorithm/字符串交错组成.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25915e2d-079a-40b4-9601-03f405cb8599/console_1.sql" />
@@ -296,6 +298,9 @@
         <option value="$PROJECT_DIR$/algorithm/寻找丑数.py" />
         <option value="$PROJECT_DIR$/链表/单向循环链表.py" />
         <option value="$PROJECT_DIR$/链表/双向链表.py" />
+        <option value="$PROJECT_DIR$/algorithm/彩色的砖块.py" />
+        <option value="$PROJECT_DIR$/algorithm/按层次遍历二叉树.py" />
+        <option value="$PROJECT_DIR$/Tree/建立树.py" />
       </list>
     </option>
   </component>
@@ -343,6 +348,21 @@
             <path>
               <item name="py_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="py_test" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="py_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py_test" type="462c0819:PsiDirectoryNode" />
+              <item name="python exam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="py_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py_test" type="462c0819:PsiDirectoryNode" />
+              <item name="Tree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="py_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py_test" type="462c0819:PsiDirectoryNode" />
               <item name="链表" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -374,7 +394,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.双向链表">
+  <component name="RunManager" selected="Python.彩色的砖块">
     <configuration name="单链表" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -389,6 +409,50 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/链表/单链表.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="彩色的砖块" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/彩色的砖块.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="The_dict" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_basis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_basis/The_dict.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -455,28 +519,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/链表/双向链表.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="The_dict" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="untitled" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_basis" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_basis/The_dict.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -597,17 +639,13 @@
     </configuration>
     <list>
       <item itemvalue="Python.The_dict" />
-      <item itemvalue="Python.寻找丑数" />
-      <item itemvalue="Python.单向循环链表" />
-      <item itemvalue="Python.双向链表" />
       <item itemvalue="Python.单链表" />
+      <item itemvalue="Python.彩色的砖块" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.双向链表" />
+        <item itemvalue="Python.彩色的砖块" />
         <item itemvalue="Python.单链表" />
-        <item itemvalue="Python.单向循环链表" />
-        <item itemvalue="Python.寻找丑数" />
         <item itemvalue="Python.The_dict" />
       </list>
     </recent_temporary>
@@ -626,15 +664,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19043824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19681275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23794712" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23794712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34059098" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -892,38 +930,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/Number0f1.py" />
-    <entry file="file://$PROJECT_DIR$/algorithm/按层次遍历二叉树.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/兑换货币.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/排列式.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/交错01串.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1012,28 +1022,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tree/建立树.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-          <folding>
-            <marker date="1547731524667" expanded="true" signature="19:24" ph="..." />
-            <marker date="1547731524667" expanded="true" signature="153:158" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python_basis/判断字符串是否为关键字.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tree/New_Tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1044,20 +1036,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/彩色的砖块.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/寻找丑数.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-          <folding>
-            <marker date="1548466941762" expanded="true" signature="223:393" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1065,41 +1047,88 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2108">
           <caret line="132" column="23" lean-forward="true" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
-          <folding>
-            <marker date="1548505534927" expanded="true" signature="34:39" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/字符串交错组成.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/链表/单链表.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="108" column="12" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/链表/双向链表.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        <state relative-caret-position="432">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
           <folding>
-            <element signature="e#265#333#0" />
-            <element signature="e#378#514#0" />
-            <element signature="e#798#904#0" />
-            <element signature="e#949#1160#0" />
-            <element signature="e#1138#1547#0" />
-            <element signature="e#1643#1817#0" />
-            <element signature="e#1858#2328#0" />
             <marker date="1548516562375" expanded="true" signature="19:24" ph="..." />
             <marker date="1548516562375" expanded="true" signature="154:159" ph="..." />
             <marker date="1548516562375" expanded="true" signature="552:701" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/交错01串.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/链表/单链表.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="108" column="12" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/兑换货币.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/字符串交错组成.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/彩色的砖块.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="33" column="15" lean-forward="true" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tree/New_Tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1128">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/按层次遍历二叉树.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <marker date="1548681944150" expanded="true" signature="37:42" ph="..." />
+            <marker date="1548681944150" expanded="true" signature="166:636" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/排列式.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tree/建立树.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+          <folding>
+            <marker date="1548684094287" expanded="true" signature="19:24" ph="..." />
+            <marker date="1548684094287" expanded="true" signature="153:158" ph="..." />
           </folding>
         </state>
       </provider>

@@ -26,7 +26,7 @@ class Tree(object):
 #     return postorder
 def find_preorder(preorder,inorder,postorder):
     if len(postorder) == 0:
-        return
+        return None
     if len(postorder) == 1:
         preorder.append(postorder[0])
         return
@@ -36,6 +36,19 @@ def find_preorder(preorder,inorder,postorder):
     find_preorder(preorder,inorder[:n],postorder[:n])
     find_preorder(preorder,inorder[n+1:],postorder[n:-1])
     return preorder
+
+"""先序和中序找后续"""
+class Solution:
+    # 返回构造的TreeNode根节点
+    def reConstructBinaryTree(self, pre, tin):
+        # write code here
+        if len(pre) == 0:
+            return None
+        root = Node(pre[0])
+        pos = tin.index(pre[0])
+        root.left = self.reConstructBinaryTree(pre[1:pos+1],tin[:pos])
+        root.right = self.reConstructBinaryTree(pre[pos+1:],tin[pos+1:])
+        return root
 
 if __name__ == '__main__':
     postorder = [7,4,2,5,8,6,3,1]

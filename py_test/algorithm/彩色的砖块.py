@@ -20,3 +20,16 @@
 #
 # 2
 
+def num(s):
+    re = set(s)
+    print(re)
+    if len(re) == 1:
+        return 1
+    elif len(re) == 2:
+        return 2
+    else:
+        return 0
+
+if __name__ == '__main__':
+    s = input()
+    print(num(s))
