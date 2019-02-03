@@ -99,7 +99,28 @@ class sigle_list(object):
             else:
                 cur = cur.next
         return False
-
+    """查找链表中倒数第k的值"""
+    def FindKthToTail(self,k):
+        cur = self._head
+        # pre = None
+        n = 1
+        while cur.next != None:
+            if n <k:
+                cur = cur.next
+                n+=1
+            else:
+                break
+        print(n)
+        if n<k:
+            return
+        else:
+            if k <=0:
+                return
+            pre = self._head
+            while cur.next!=None:
+                cur = cur.next
+                pre = pre.next
+        return pre.value
 
 
 if __name__ == '__main__':
@@ -107,13 +128,15 @@ if __name__ == '__main__':
     # print(li.is_empty())
     li.append(1)
     li.add(2)
-    # li.append(2)
-    # li.append(3)
-    # li.insert(9,3)
+    li.append(4)
+    li.append(3)
+    li.insert(9,3)
     # print(li.is_empty())
     # print(li.The_length())
-    print(li.search(2))
+    # print(li.search(2))
+    # li.travel()
+    # li.remove(1)
+    # print("")
     li.travel()
-    li.remove(1)
     print("")
-    li.travel()
+    print(li.FindKthToTail(0))
