@@ -122,6 +122,24 @@ class sigle_list(object):
                 pre = pre.next
         return pre.value
 
+# """链表的反转"""
+#三个变量 head当前节点 pre当前节点的前一个节点 temp暂存当前节点
+    def reserve(self):
+        pre = None   #当前节点的前一个节点
+        head = self._head  #当前节点
+        """链表为空返回"""
+        if head == None:
+            return
+
+        while head != None:
+            """建立一个临时变量temp"""
+            temp = head.next
+            head.next = pre  #反转
+
+            pre = head  #pre向右移
+            head = temp #head指向下一个节点
+        return pre
+
 
 if __name__ == '__main__':
     li = sigle_list()
