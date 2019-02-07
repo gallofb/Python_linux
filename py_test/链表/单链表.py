@@ -139,7 +139,22 @@ class sigle_list(object):
             pre = head  #pre向右移
             head = temp #head指向下一个节点
         return pre
+# 合并两个链表
+    #递归调用
+    def Merge(self,p1,p2):
+        if p1 == None:
+            return p2
+        if p2 == None:
+            return p1
+        pMergeNew = None
+        if p1.value < p2.value:
+            pMergeNew = p1
+            pMergeNew.next = self.Merge(p1.next,p2)
+        else:
 
+            pMergeNew = p2
+            pMergeNew.next = self.Merge(p1,p2.next)
+        return pMergeNew
 
 if __name__ == '__main__':
     li = sigle_list()
