@@ -67,6 +67,21 @@ class Tree(object):
         self.postorder(node.r_child)
         print(node.elem,end=" ")
 
+
+    #镜像二叉树
+    def Mirror(self,node):
+        if node == None:
+            return
+        #只要左右子数都不为空就交换
+        if node.l_child == None and node.r_child == None:
+            return
+
+        node.l_child,node.r_child = node.r_child,node.l_child
+        #地柜推推倒
+        self.Mirror(node.l_child)
+        self.Mirror(node.r_child)
+
+
 if __name__ == '__main__':
     tree = Tree()
     tree.add(0)
