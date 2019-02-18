@@ -18,7 +18,7 @@ class Solution:
     def __init__(self,node):
         self.node = None
 
-#遍历树
+#遍历树w
     def HasSubtree(self,root1,root2):
         #定义result初始状态为false
         reslut = False
@@ -45,5 +45,28 @@ class Solution:
             return False
         #同时满足一下两个条件
         return self.DoesTreeeHaveTree(root1.left,root2.left) and self.DoesTreeeHaveTree(root1.right,root2.left)
+
+    def VerifySquenceOfBST(self, sequence):
+        if len(sequence)<=0:
+            return False
+        left_sequnce = []
+        right_sequnce =[]
+        head = sequence[-1]
+        for i in range(len(sequence)-1):
+            if sequence[i] < head:
+                left_sequnce.append(sequence[i])
+            else:
+                break
+        while i<len(sequence)-1:
+            if sequence[i] > head:
+                right_sequnce.append(sequence[i])
+            else:
+                return False
+            i +=1
+        self.VerifySquenceOfBST(left_sequnce)
+        self.VerifySquenceOfBST(right_sequnce)
+        return True
+
+
 
 
