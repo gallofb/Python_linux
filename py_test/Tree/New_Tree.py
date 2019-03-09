@@ -60,6 +60,21 @@ class Tree(object):
         print(node.elem,end=" ")
         self.inorder(node.r_child)
 
+    def inorder_no(self,node):
+        if node is None:
+            return
+        stack = []
+        sum = []
+        while stack or node:
+            if node:
+                stack.append(node)
+                node = node.l_child
+            else:
+                node = stack.pop(-1)
+                sum.append(node.elem)
+                node = node.r_child
+        return sum
+
     def postorder(self,node):
         if node is None:
             return
@@ -67,6 +82,9 @@ class Tree(object):
         self.postorder(node.r_child)
         print(node.elem,end=" ")
 
+
+    def postorder_no(self,node):
+        pass
 
     #镜像二叉树
     def Mirror(self,node):
@@ -81,7 +99,6 @@ class Tree(object):
         self.Mirror(node.l_child)
         self.Mirror(node.r_child)
 
-
 if __name__ == '__main__':
     tree = Tree()
     tree.add(0)
@@ -94,12 +111,14 @@ if __name__ == '__main__':
     tree.add(7)
     tree.add(8)
     tree.add(9)
-
-    tree.breadth_travel()
-    print(" ")
-    tree.preorder(tree.root)
-    print(" ")
+    #
+    # tree.breadth_travel()
+    # print(" ")
+    # tree.preorder(tree.root)
+    # print(" ")
     tree.inorder(tree.root)
     print(" ")
-    tree.postorder(tree.root)
+    # tree.postorder(tree.root)
+    list = tree.inorder_no(tree.root)
+    print(list)
 

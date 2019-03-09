@@ -30,4 +30,4 @@ if __name__ == '__main__':
     alist = [5,7,6,9,11,10,8]
     print(Tree.VerifySquenceOfBST(alist))
 
-#一个死循环让我怀疑人生总以为自己的电脑坏了
+    #一个死循环让我怀疑人生总以为自己的电脑坏了
