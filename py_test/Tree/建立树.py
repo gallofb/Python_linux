@@ -50,6 +50,8 @@ class Solution:
         root.right = self.reConstructBinaryTree(pre[pos+1:],tin[pos+1:])
         return root
 
+
+
 if __name__ == '__main__':
     postorder = [7,4,2,5,8,6,3,1]
     inorder = [4,7,2,1,5,3,8,6]

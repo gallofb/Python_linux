@@ -1,17 +1,17 @@
 class Node(object):
     """构建结点"""
-    def __init__(self,item):
-        self.elem = item
-        self.l_child = None
-        self.r_child = None
+    def __init__(self,val):
+        self.val = val
+        self.left = None
+        self.right = None
 
 class Tree(object):
     """构造树"""
     def __init__(self):
     #     首结点的地址
         self.root = None
-    def add(self,item):
-        node = Node(item)
+    def add(self,val):
+        node = Node(val)
         if self.root == None:
             self.root = node
             return
@@ -21,16 +21,16 @@ class Tree(object):
         while queue:
             # 出队列
             cur_node = queue.pop(0)
-            if cur_node.l_child is None:
-                cur_node.l_child = node
+            if cur_node.left is None:
+                cur_node.left = node
                 return
             else:
-                queue.append(cur_node.l_child)
-            if cur_node.r_child is None:
-                cur_node.r_child = node
+                queue.append(cur_node.left)
+            if cur_node.right is None:
+                cur_node.right = node
                 return
             else:
-                queue.append(cur_node.r_child)
+                queue.append(cur_node.right)
     #广度遍历
     def breadth_travel(self):
         queue = [self.root]
@@ -38,27 +38,27 @@ class Tree(object):
             return
         while queue:
             cur_node = queue.pop(0)
-            print(cur_node.elem,end=" ")
-            if cur_node.l_child is not None:
-                queue.append(cur_node.l_child)
-            if cur_node.r_child is not None:
-                queue.append(cur_node.r_child)
+            print(cur_node.val,end=" ")
+            if cur_node.left is not None:
+                queue.append(cur_node.left)
+            if cur_node.right is not None:
+                queue.append(cur_node.right)
 
     """先序遍历"""
     def preorder(self,node):
         if node is None:
             return
-        print(node.elem,end=" ")
-        self.preorder(node.l_child)
-        self.preorder(node.r_child)
+        print(node.val,end=" ")
+        self.preorder(node.left)
+        self.preorder(node.right)
 
     """中序遍历"""
     def inorder(self,node):
         if node is None:
             return
-        self.inorder(node.l_child)
-        print(node.elem,end=" ")
-        self.inorder(node.r_child)
+        self.inorder(node.left)
+        print(node.val,end=" ")
+        self.inorder(node.right)
 
     def inorder_no(self,node):
         if node is None:
@@ -68,19 +68,19 @@ class Tree(object):
         while stack or node:
             if node:
                 stack.append(node)
-                node = node.l_child
+                node = node.left
             else:
                 node = stack.pop(-1)
-                sum.append(node.elem)
-                node = node.r_child
+                sum.append(node.val)
+                node = node.right
         return sum
 
     def postorder(self,node):
         if node is None:
             return
-        self.postorder(node.l_child)
-        self.postorder(node.r_child)
-        print(node.elem,end=" ")
+        self.postorder(node.left)
+        self.postorder(node.right)
+        print(node.val,end=" ")
 
 
     def postorder_no(self,node):
@@ -91,13 +91,47 @@ class Tree(object):
         if node == None:
             return
         #只要左右子数都不为空就交换
-        if node.l_child == None and node.r_child == None:
+        if node.left == None and node.right == None:
             return
 
-        node.l_child,node.r_child = node.r_child,node.l_child
+        node.left,node.right = node.right,node.left
         #地柜推推倒
-        self.Mirror(node.l_child)
-        self.Mirror(node.r_child)
+        self.Mirror(node.left)
+        self.Mirror(node.right)
+
+    #递归实现二叉树的遍历
+    
+    #从右向左
+    def see_right(self,node):
+        if node == None:
+            return
+        qunue_1 = [node]
+        qunue_2 = []
+        tmp_list = []
+        while qunue_1 or qunue_2:
+            while qunue_1:
+                p = qunue_1.pop(0)
+                tmp_list.append(p.val)
+                if p.left:
+                    qunue_2.append(p.left)
+                if p.right:
+                    qunue_2.append(p.right)
+            print(tmp_list[-1])
+            tmp_list = []
+
+            while qunue_2:
+                p = qunue_2.pop(0)
+                tmp_list.append(p.val)
+                if p.left:
+                    qunue_1.append(p.left)
+                if p.right:
+                    qunue_1.append(p.right)
+            print(tmp_list[-1])
+            tmp_list = []
+
+            
+
+
 
 if __name__ == '__main__':
     tree = Tree()
@@ -121,4 +155,5 @@ if __name__ == '__main__':
     # tree.postorder(tree.root)
     list = tree.inorder_no(tree.root)
     print(list)
+    tree.see_right(tree.root)
 
