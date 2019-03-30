@@ -100,14 +100,22 @@ class Tree(object):
         self.Mirror(node.right)
 
     #递归实现二叉树的遍历
-    
+    def travel(self,node):
+        if node is None:
+            return
+        print(node.val)
+        self.travel(node.left)
+
+
+
     #从右向左
     def see_right(self,node):
+        """类似于按层次遍历换行输出树"""
         if node == None:
             return
         qunue_1 = [node]
         qunue_2 = []
-        tmp_list = []
+        tmp_list = []  #临时数组来存储每一行的节点的val值
         while qunue_1 or qunue_2:
             while qunue_1:
                 p = qunue_1.pop(0)
@@ -117,7 +125,7 @@ class Tree(object):
                 if p.right:
                     qunue_2.append(p.right)
             print(tmp_list[-1])
-            tmp_list = []
+            tmp_list = []  #换行将临时列表制为空
 
             while qunue_2:
                 p = qunue_2.pop(0)
@@ -130,6 +138,7 @@ class Tree(object):
             tmp_list = []
 
             
+
 
 
 
@@ -155,5 +164,6 @@ if __name__ == '__main__':
     # tree.postorder(tree.root)
     list = tree.inorder_no(tree.root)
     print(list)
-    tree.see_right(tree.root)
+    # tree.see_right(tree.root)
+    tree.travel(tree.root)
 

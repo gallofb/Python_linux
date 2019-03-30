@@ -8,11 +8,12 @@
 # 稳定性：不稳定
 # 从小到大排序
 
+#此位置和最小的数交换
 def select_sort(alist):
 
     n = len(alist)
     for i in range(n-1):  #i  0～n-2
-        min_index = i
+        min_index = i   #最小的数的下标
         for j in range(i+1,n):
             if alist[min_index] > alist[j]:
                 min_index = j
