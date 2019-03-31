@@ -27,7 +27,7 @@ class HeapSort():
             list[index],list[(index-1)//2] = list[(index-1)//2],list[index]
             index = (index-1)//2
 
-    #交换后让在让堆变成大顶堆
+    #交换后让堆变成大顶堆
     def heapify(self,list,index,size):
         left = index*2+1
         while left < size:
