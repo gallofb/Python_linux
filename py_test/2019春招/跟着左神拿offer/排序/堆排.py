@@ -44,7 +44,6 @@ class HeapSort():
             index = largest
             left = index*2+1
 
-
 if __name__ == '__main__':
     list = [5,6,2,1,8,2,0,3,8]
     hs = HeapSort()
