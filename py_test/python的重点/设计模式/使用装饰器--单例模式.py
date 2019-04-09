@@ -37,24 +37,53 @@
 #         v.show()
 
 
-
-class Foo:
-    __v = None
-    @classmethod
-    def get_instance(cls):
-        if cls.__v:
-            return cls.__v
-        else:
-            cls.__v = Foo()
-            return cls.__v
-
-obj = Foo.get_instance()
-print(obj)
-#第二次执行的时候v已经有值了 因为单例模式的原因第一次已经创建的v已经存在  所以第二次直接就可以调用
-obj2 = Foo.get_instance()
-print(obj2)
-
-obj3 = Foo.get_instance()
-print(obj3)
+#
+# class Foo:
+#     __v = None
+#     @classmethod
+#     def get_instance(cls):
+#         if cls.__v:
+#             return cls.__v
+#         else:
+#             cls.__v = Foo()
+#             return cls.__v
+#
+# obj = Foo.get_instance()
+# print(obj)
+# #第二次执行的时候v已经有值了 因为单例模式的原因第一次已经创建的v已经存在  所以第二次直接就可以调用
+# obj2 = Foo.get_instance()
+# print(obj2)
+#
+# obj3 = Foo.get_instance()
+# print(obj3)
 
 #以后想用的时候直接就可以拿来用主要调用过
+
+
+class Singleton:
+    __instance = None
+
+    def __new__(cls, *args, **kwargs):
+        if cls.__instance is None:
+            cls.__instance = object.__new__(cls)
+            #类似于一下方法因为 object又叫我是你爸爸
+            # cls.__instance = super(
+            #     Singleton, cls).__new__(cls)
+        return cls.__instance
+
+    def __init__(self,num):
+        self.num = num
+
+
+
+
+
+
+s1 = Singleton(2)
+s2 = Singleton(5)
+print (s1)
+print (s2)
+
+print (s1.num)  #5
+print (s2.num)  #5
+
