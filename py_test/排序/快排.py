@@ -21,42 +21,42 @@
 # QuickSort(arr,0,len(arr)-1)
 
 
-
-
-
-
-
-
-def quick_sort(list,first,last):
-    if first >= last:
-        return
-    # n = len(list)
-    mid_value = list[first]
-    low = first
-    high = last
-    while low < high:
-        #high左移
-        while low < high and list[high] >= mid_value:
-            high -=1
-        list[low] = list[high]
-
-        while low < high and list[low] < mid_value:
-            low +=1
-        list[high] = list[low]
-    #从循环退出时low == high
-    list[low] = mid_value
-    quick_sort(list,first,low-1)
-
-    quick_sort(list,low+1,last)
-
-
-# if __name__ == '__main__':
-#     list = [1,5,9,7,2,7,2,1,3,4]
-#     print(list)
-#     quick_sort(list,0,len(list)-1)
-#     print(list)
-
-
+#
+#
+#
+#
+#
+#
+# def quick_sort(list,first,last):
+#     if first >= last:
+#         return
+#     # n = len(list)
+#     mid_value = list[first]
+#     low = first
+#     high = last
+#     while low < high:
+#         #high左移
+#         while low < high and list[high] >= mid_value:
+#             high -=1
+#         list[low] = list[high]
+#
+#         while low < high and list[low] < mid_value:
+#             low +=1
+#         list[high] = list[low]
+#     #从循环退出时low == high
+#     list[low] = mid_value
+#     quick_sort(list,first,low-1)
+#
+#     quick_sort(list,low+1,last)
+#
+#
+# # if __name__ == '__main__':
+# #     list = [1,5,9,7,2,7,2,1,3,4]
+# #     print(list)
+# #     quick_sort(list,0,len(list)-1)
+# #     print(list)
+#
+#
 
 
 
