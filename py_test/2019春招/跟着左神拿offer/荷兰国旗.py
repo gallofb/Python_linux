@@ -15,7 +15,7 @@ class NetherlandsFlag():
         return
     def PrintList(self,list):
         if list is None:
-            return;
+            return
         print(list)
 
 if __name__ == '__main__':
